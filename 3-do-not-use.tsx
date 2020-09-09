@@ -44,4 +44,6 @@ const AvatarWithContext = () => {
   );
 };
 
-// Result: Avatar now needs to be used with a context provider.
+// Result:
+// Avatar now needs to be used with a context provider.
+// It can be hard to trace where the context is provided.
