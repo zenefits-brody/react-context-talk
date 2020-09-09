@@ -5,12 +5,20 @@ const ThemeContext = createContext('light');
 const App = () => (
   <ThemeContext.Provider value="dark">
     <Toolbar />
+    <NavBar />
   </ThemeContext.Provider>
 );
 
 const Toolbar = () => (
   <div>
     <IconButton />
+  </div>
+);
+
+const NavBar = () => (
+  <div>
+    <IconButton />
+    {/* ... */}
   </div>
 );
 

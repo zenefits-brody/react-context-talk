@@ -1,8 +1,28 @@
-const App = () => <Toolbar theme="dark" />;
+import { useState } from 'react';
+
+const App = () => {
+  // Our app has two themes: dark and light.
+  const [theme, setTheme] = useState('dark');
+
+  return (
+    <div>
+      <Toolbar theme={theme} />
+      <NavBar theme={theme} />
+    </div>
+  );
+};
 
 const Toolbar = ({ theme }) => (
   <div>
     <IconButton theme={theme} />
+    {/* ... */}
+  </div>
+);
+
+const NavBar = ({ theme }) => (
+  <div>
+    <IconButton theme={theme} />
+    {/* ... */}
   </div>
 );
 
