@@ -12,4 +12,4 @@ NotificationProvider must be specified somewhere at a higher level for Notificat
 
 ### More
 
-Search `context.provider` for more examples.
+Search `.provider` for more examples.

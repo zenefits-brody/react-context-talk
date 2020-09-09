@@ -44,6 +44,6 @@ const AvatarWithContext = () => {
   );
 };
 
-// Result:
-// Avatar now needs to be used with a context provider.
-// It can be hard to trace where the context is provided.
+// Thoughts:
+// Avatar now needs to be used with a context provider, which makes reuse more difficult.
+// Performance: rerender when context changes.

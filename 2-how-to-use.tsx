@@ -34,5 +34,3 @@ const Button = () => {
     // ...
   }
 };
-
-// https://reactjs.org/docs/context.html#when-to-use-context
