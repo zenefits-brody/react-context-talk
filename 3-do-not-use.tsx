@@ -28,9 +28,15 @@ const UserContext = createContext({});
 const AppWithContext = ({ user }) => (
   <UserContext.Provider value={user}>
     <div>
-      <NavBar user={user} />
+      <NavBarWithContext />
     </div>
   </UserContext.Provider>
+);
+
+const NavBarWithContext = () => (
+  <div>
+    <AvatarWithContext />
+  </div>
 );
 
 const AvatarWithContext = () => {
@@ -45,5 +51,7 @@ const AvatarWithContext = () => {
 };
 
 // Thoughts:
+
 // Avatar now needs to be used with a context provider, which makes reuse more difficult.
+
 // Performance: rerender when context changes.
